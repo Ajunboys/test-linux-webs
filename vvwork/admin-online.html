@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html  ng-app='index' ng-controller='indexController'  lang="zh-CN">
+<head>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+
+	<meta name="mobile-web-app-capable" content="yes" />
+	
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	
+	<meta name="apple-mobile-web-app-status-bar-style"
+		content="black-translucent" />
+		
+	<meta name="renderer" content="webkit"/>
+	
+	<link rel="icon" type="image/png" href="/userdata/logo.png" />
+	
+	<link rel="shortcut" type="image/png" href="/userdata/logo.png" />
+	
+	<link rel="icon" type="image/png" sizes="144x144"
+		href="/userdata/logo.png" />
+	
+	<link rel="apple-touch-icon" type="image/png" href="/userdata/logo.png" />
+
+  <title ng-bind="APP.NAME">VirWork跨屏云办公后台管理系统</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  
+    <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+  <!-- jvectormap -->
+  <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/iCheck/square/blue.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="libs/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+  <link rel="stylesheet" href="styles/google.fonts.css">
+  <link rel="stylesheet" href="styles/admin-app.css">
+  <link rel="stylesheet" href="styles/jquery.orgchart.css">
+        
+</head>
+<body class="hold-transition sidebar-mini skin-blue-light {{loginClass}}">
+
+ <manage-home-login-page  ng-if="expectedCredentials"></manage-home-login-page>
+ 
+ <manage-home-page ng-if="canUseManageFeature"></manage-home-page>
+
+<!-- jQuery 3 -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- ChartJS -->
+<script src="bower_components/chart.js/Chart.js"></script>
+<!-- FastClick -->
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- Sparkline -->
+<script src="bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+<!-- jvectormap  -->
+<script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<!-- DataTables -->
+<script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+
+<!-- SlimScroll -->
+<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- iCheck -->
+<script src="plugins/iCheck/icheck.min.js"></script>
+
+
+<script src="libs/lodash/lodash.min.js"></script>
+
+<script src="libs/messageformat/messageformat.js"></script>
+
+<script src="libs/angular/angular.min.js"></script>
+
+
+<script src="libs/angular/angular-cookies.min.js"></script>
+<script src="libs/angular/angular-route.min.js"></script>
+<script src="libs/angular/angular-touch.min.js"></script>
+<script src="libs/angular/angular-translate.min.js"></script>
+<script src="libs/angular/angular-translate-interpolation-messageformat.min.js"></script>
+<script src="libs/angular/angular-translate-loader-static-files.min.js"></script>
+
+<script src="libs/blob-polyfill/Blob.js"></script>
+<script src="libs/filesaver/FileSaver.min.js"></script>
+<script src="libs/angular/angular-module-shim.js"></script>
+<script src="libs/angular/ng-file-upload.js"></script>
+<script src="libs/angular/ng-file-upload-shim.js"></script>
+
+<!-- <script src="libs/bootstrap/js/bootstrap.min.js"></script> -->
+<script src="libs/bootstrap/js/bootstrap-datetimepicker.min.js"></script>
+
+<script src="libs/angular-ui-router.js"></script>
+<script src="libs/moment.js"></script>
+<script src="libs/daterangepicker.js"></script>
+<script src="libs/ng-file-upload.js"></script>
+<script src="libs/sha256.js"></script>
+<script src="libs/tools.js"></script>
+<script src="libs/angular-ui-tree.min.js"></script>
+<script src="libs/notify.min.js"></script>
+<script src="libs/jquery.orgchart.js"></script>
+
+<!-- InputMask -->
+<script src="plugins/input-mask/jquery.inputmask.js"></script>
+<script src="plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+<script src="plugins/input-mask/jquery.inputmask.extensions.js"></script>
+
+<script src="virwork_manage_v5.0.0.1.min.js"></script>
+ 
+
+</body>
+</html>

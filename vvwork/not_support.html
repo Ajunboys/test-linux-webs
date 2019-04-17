@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+
+<meta name="mobile-web-app-capable" content="yes" />
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<meta name="apple-mobile-web-app-status-bar-style"
+	content="black-translucent" />
+
+<link rel="icon" type="image/png" href="/userdata/logo.png" />
+
+<link rel="icon" type="image/png" sizes="144x144"
+	href="/userdata/logo.png" />
+
+<link rel="apple-touch-icon" type="image/png" href="/userdata/logo.png" />
+
+<title>当前浏览器不支持兼容模式 - 跨屏办公</title>
+
+<link type='text/css' rel='stylesheet' href='css/ui.css?v=3.2.1' />
+</head>
+<body>
+	<div id="nonSupportMask" class="non_support_mask">
+		<div class="no_sup_mask_main">
+			<h1 style="display: none;">跨屏办公-云办公好助手</h1>
+			<h1>
+				您的浏览器
+				<del>不支持</del>
+			</h1>
+			<p>
+				您的浏览器版本太低，所以您无法使用跨屏办公。<br />我们推荐您使用以下两种浏览器，以便能更好的体验我们带给您的服务。
+			</p>
+			<div class="bs_logo_list">
+				<a class="sup_chrome" title="谷歌Chrome浏览器"
+					href="/userdata/download/ChromeStandaloneSetup64.exe"
+					target="_self">
+					</a> <a class="sup_firefox" title="火狐Firefox浏览器"
+					href="/userdata/download/Firefox-latest.exe" target="_self"></a> <!-- <a
+					class="sup_ie" title="IE浏览器"
+					href="javascript:downloadIE();"
+					></a>  -->
+					<!-- 
+					<a class="sup_chrome" title="Chrome"
+					href="http://www.google.cn/intl/zh-CN/chrome/browser/"
+					target="_blank"></a> <a class="sup_firefox" title="Firefox"
+					href="http://firefox.com.cn/" target="_blank"></a><a
+					class="sup_ie" title="IE10+"
+					href="http://windows.microsoft.com/en-us/internet-explorer/download-ie?ref=mcm"
+					target="_blank"></a><a class="sup_safari" title="Safari"
+					href="http://support.apple.com/kb/DL1531" target="_blank"></a> <a
+					class="sup_opera" title="Opera" href="http://www.opera.com/zh-cn"
+					target="_blank"></a> -->
+			</div>
+			<div class="platform-browser-toptic download-browser"><b>若已经安装谷歌Chrome浏览器或者火狐Firefox浏览器，请使用谷歌Chrome浏览器或者火狐Firefox浏览器</b></div>
+			<!-- <div class="download-browser">
+				<div class="ng-scope ie" id="ie-download-btns" style="display:none;"><span>
+					<a class="btn btn-primary managed-link content-action-link x-hidden-focus" href="/userdata/download/EIE11_ZH-CN_WOL_WIN764.EXE"
+					 target="_self">下载 Internet Explorer 11（64 位）</a></span><span>
+					<a class="btn btn-primary managed-link content-action-link x-hidden-focus" href="/userdata/download/EIE11_ZH-CN_WOL_WIN7.EXE"
+					 target="_self">下载 Internet Explorer 11（32 位）</a></span>
+				 </div>
+			</div> -->
+			
+		</div>
+	</div>
+	<script type="text/javascript">
+	function downloadIE(){
+		var downloadIEBtns = document.getElementById("ie-download-btns");
+		var isShown = downloadIEBtns.style.display == "block";
+		if(!!!!isShown) downloadIEBtns.style.display = "none";
+		if(!!!isShown) downloadIEBtns.style.display = "block";
+		
+	};
+	</script>
+</body>
+</html>

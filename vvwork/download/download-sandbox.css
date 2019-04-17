@@ -1,0 +1,23 @@
+.virworkbox {
+    min-height: 250px;
+    padding: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: block;
+}
+.virworkbox .callout.callout-warning, .virworkbox .callout-warning {
+    border-color: #c87f0a;
+    background-color: #f39c12 !important;
+}
+.virworkbox .callout {
+    border-radius: 3px;
+    margin: 0 0 20px 0;
+    padding: 15px 30px 15px 15px;
+    border-left: 5px solid #eee;
+}
+.virworkbox .callout a {
+    color: #fff;
+    text-decoration: underline;
+}

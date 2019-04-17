@@ -1,0 +1,167 @@
+{
+	"NAME":"中 文",
+	"APP":{
+		"ACTION_OK": "确定",
+		"ACTION_SETTING": "设置",
+		"ACTION_CANCEL": "取消",
+		"ACTION_CLONE": "复制",
+		"ACTION_EDIT": "编辑",
+		"ACTION_CONTINUE": "继续",
+		"ACTION_DELETE": "删除",
+		"ACTION_DELETE_CONFIG": "清除配置",
+		"ACTION_BACK_CONFIG": "恢复系统配置",
+		"ACTION_LOGIN": "登录",
+		"ACTION_REGISTER": "注册",
+		"ACTION_LOGOUT": "注销",
+		"ACTION_NAVIGATE_BACK": "返回",
+		"ACTION_NAVIGATE_HOME": "主页",
+		"ACTION_SAVE": "保存",
+		"ACTION_SEARCH": "搜索",
+		"ACTION_UPDATE_PASSWORD": "更新密码",
+		"ACTION_RECREATE": "重新建立",
+		"ACTION_RECONNECT": "重新连接",
+		"ACTION_ACKNOWLEDGE": "知道了",
+		"ACTION_UPLOAD": "上传",
+		"ACTION_DOWNLOAD": "下载",
+		"ACTION_DOWNLOAD_CLIENT_APP": "下载客户端",
+		"ACTION_VPN": "安全通道",
+		"ACTION_VPN_DISCONNECTED": "安全通道未建立",
+		"ACTION_VPN_CONNECTED": "安全通道已建立",
+		"ACTION_SYNC_CLOUDSTORAGE": "同步本地云盘",
+		"ACTION_RESYNC_CLOUDSTORAGE": "重新同步云盘",
+		"ACTION_MY_CLOUDSTORAGE":"我的云盘"
+	},
+	
+	"USER_PERSONAL":{
+		"TITLE" : "个人信息",
+		"FEATURE_ITEM_EDIT_INFO":"编辑个人信息",
+		"FEATURE_ITEM_EDIT_UPDATE_PASSWORD":"修改密码",
+		"FEATURE_ITEM_EDIT_SSO_APPS_INFO":"SSO应用账号信息",
+		"FEATURE_ITEM_EDIT_AUTO_OPEN_APPS_INFO":"自启动应用设置",
+		"PERSONAL_INFO":{
+			"TITLE":"修改信息",
+			"USERNAME":"用户名",
+			"NICAKNAME":"昵称",
+			"WORK_NUMBER":"工号"
+		},
+		"UPDATE_PASSWORD":{
+			"TITLE":"修改密码",
+			"FIELD_OLD_PASSWORD":"原登录密码",
+			"FIELD_NEW_PASSWORD":"新密码",
+			"TEXT_OLD_PASSWORD":"请输入原登录密码",
+			"TEXT_NEW_PASSWORD":"请输入新密码"
+		},
+		"SSO_INFO":{
+			"TITLE":"SSO账号管理",
+			"FEATURE_MESSAGE_TITLE":"点击下列应用可编辑对应的SSO单点登录账户信息.",
+			"APP_NAME":"应用",
+			"APP_SSO_SET_INFO":"已设置",
+			"APP_SSO_NO_SET_INFO":"未设置",
+			"APP_SSO_APP":"当前SSO应用:",
+			"APP_PLS_INPUT":"请输入"
+		},
+		"AUTO_OPEN_APPS":{
+			"TITLE":"自启动应用",
+			"FEATURE_MESSAGE_TITLE":"选择应用后，下次登录将直接自动启动应用."
+		}
+	},
+
+	"MANAGE":{
+		"TITLE" : "后台管理",
+		
+		"FEATURE_ACCOUNT":"账户管理",
+		"FEATURE_DEPARTMENT":"部门管理",
+		"FEATURE_ROLE":"角色管理",
+		"FEATURE_USER":"用户管理",
+		
+		"FEATURE_MACHINE_MANAGE":"应用服务器管理",
+		"FEATURE_MACHINE_INFO":"应用服务器列表",
+		"FEATURE_NEW_MACHINE":"新增服务器",
+		
+		"FEATURE_APPLICATION_MANAGE":"应用管理",
+		"FEATURE_SESSION":"在线应用使用记录",
+		"FEATURE_SOFTWARE":"创建应用",
+		"FEATURE_SOFTWARE_LIST":"应用程序列表",
+		"FEATURE_APPLICATION":"发布应用",
+		"FEATURE_APPLICATION_LIST":"应用列表",
+		"FEATURE_SSO_APPLICATION_LIST":"SSO应用列表",
+		
+		"FEATURE_NETWORK_MANAGE":"网络管理",
+		"FEATURE_NETWORK_VPN_SERVER_LIST":"VPN服务器",
+		"FEATURE_NETWORK_ROUTER_ROLE_LIST":"路由角色列表",
+		"FEATURE_NETWORK_ROUTER_ROLE_NEW":"新增路由角色",
+		"FEATURE_NETWORK_ROUTER_LIST":"路由列表",
+		"FEATURE_NETWORK_POLICY_ROUTER_LIST":"路由策略管理",
+		"FEATURE_NETWORK_ROUTER_NEW":"新增路由",
+		"FEATURE_NETWORK_ROUTER_ADDRESS_LIST":"本地网段设置",
+		
+		
+		"FEATURE_MANUFACTURERS":"厂家设置",
+		"FEATURE_MANUFACTURERS_SANDBOX":"虚拟沙盒",
+		"FEATURE_MANUFACTURERS_LICENSE":"系统许可",
+		
+		
+		"FEATURE_SYSTEM_SETTING":"系统设置",
+		"FEATURE_SYSTEM_WEBSITE_INFO":"网站信息",
+		"FEATURE_SYSTEM_LICENSE":"系统许可",
+		"FEATURE_SYSTEM_WEB_SERVER":"系统服务器",
+		"FEATURE_SYSTEM_DATABASE_BAKUP":"数据库备份",
+		"FEATURE_SYSTEM_SSLVPN_AUTH":"SSLVPN安全认证",
+		"FEATURE_SYSTEM_SECURITY_AUTH":"上网行为审计",
+		"FEATURE_SYSTEM_CLOUDSTORAGE_SERVER":"系统云盘服务器",
+		"FEATURE_SYSTEM_SANDBOX_PC_INSTALL_SETTING":"电脑端沙盒安装设置",
+		"FEATURE_SYSTEM_APPLICATION_WATERMARK":"应用使用防盗",
+		"FEATURE_SYSTEM_LOGIN_SETTING":"用户登录权限",
+		
+		
+		"FEATURE_SYSTEM_LOGGER":"系统日志",
+		"FEATURE_SYSTEM_TERMINAL":"控制台"
+	},
+
+	"LOGIN" :{
+		"TITLE":"跨屏云办公",
+		"ERROR_MESSAGE":"请输入正确用户信息",
+		"LOGIN_FIELD_USERNAME":"用户名",
+		"LOGIN_FIELD_PASSWORD":"密码",
+		"LOGIN_FIELD_WORKNUMBER":"工号",
+		"LOGIN_FIELD_SECURITY_CODE":"验证码",
+		"LOGIN_FIELD_REMEBER_PASSWORD":"记住账户",
+		"ACTION_AUTO_LOGIN":"自动登录",
+		"COPYRIGHT" :{
+			"STATEMENT_A":"版权使用:",
+			"STATEMENT_B":"技术支持:"
+		}
+	},
+	
+	"HOME":{
+		"DB_CLICK_OPEN_APP":"双击打开",
+		"WELCOME":"您好!",
+		"SYSTEM_FEATURE": "系统功能",
+		"ADMIN_PAGE" : "后台管理系统"
+	},
+	
+	"VIRWORK_SANDBOX":{
+		"TITLE":"虚拟沙盒",
+		"HOME":{
+			"WARN":"提示：当前浏览器为IE/Edge浏览器,请更换Chrome、火狐浏览器，或",
+			"TITLE":"请启动沙盒!",
+			"STATEMENT_A":"若未安装沙盒，请先下载沙盒，并安装.",
+			"STATEMENT_B":"下载 虚拟沙盒",
+			"STATEMENT_C":"若已安装沙盒，请启动沙盒(可鼠标双击桌面沙盒快捷图标)"
+		},
+		"PC_APP":{
+			"TITLE":"请使用虚拟沙盒打开跨屏云办公!",
+			"STATEMENT_A":" 如果需要使用本地浏览器打开跨屏云办公，请右键点击桌面任务栏中VirWork沙盒：“系统设置”——“匹配浏览器”——不勾选“ 使用VirWork沙盒”,“确定”——“确定”之后，即可"
+		},
+		"PC_BROWSER":{
+			"TITLE":"请使用本地浏览器打开跨屏云办公!",
+			"STATEMENT_A":"请右键点击桌面任务栏中VirWork沙盒：“登录沙盒”即可用本地浏览器打开跨屏办公.",
+			"STATEMENT_B":" 如果需要使用沙盒打开跨屏云办公， 请右键点击桌面任务栏中VirWork沙盒：“系统设置”——“匹配浏览器”——勾选“ 使用VirWork沙盒”,“确定”——“确定”之后，即可。"
+		},
+		"UPDATE_APP":{
+			"TITLE":"更新沙盒 ",
+			"STATEMENT_A":"更新: "
+		}
+	}
+	
+}

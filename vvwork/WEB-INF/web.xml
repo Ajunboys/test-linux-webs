@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <error-page>
+    <error-code>400</error-code>
+    <location>/WEB-INF/view/400.html</location>
+  </error-page>
+  <error-page>
+    <error-code>404</error-code>
+    <location>/WEB-INF/view/404.html</location>
+  </error-page>
+  <error-page>
+    <error-code>500</error-code>
+    <location>/WEB-INF/view/500.html</location>
+  </error-page>
+  
+   
+  <filter>
+    <filter-name>guiceFilter</filter-name>
+    <filter-class>com.google.inject.servlet.GuiceFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>guiceFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <filter>
+    <filter-name>CORSFilter</filter-name>
+    <filter-class>org.ebaysf.web.cors.CORSFilter</filter-class>
+  </filter>
+  <filter-mapping>
+	    <filter-name>CORSFilter</filter-name>
+	    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+	
+	
+  <listener>
+    <listener-class>com.vvwork.client.net.basic.BasicServletContextListener</listener-class>
+  </listener>
+  
+  <listener>  
+    <listener-class>com.vvwork.client.net.basic.VvWorkSessionController</listener-class>  
+  </listener> 
+  
+  <filter>
+    <filter-name>resourceFileGuiceFilter</filter-name>
+    <filter-class>com.vvwork.client.net.basic.ResourceFileGuiceFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>resourceFileGuiceFilter</filter-name>
+    <url-pattern>/resource-download/*</url-pattern>
+  </filter-mapping>
+  <filter>
+    <filter-name>printFileGuiceFilter</filter-name>
+    <filter-class>com.vvwork.client.net.basic.PrintFileGuiceFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>printFileGuiceFilter</filter-name>
+    <url-pattern>/download-print-file/*</url-pattern>
+  </filter-mapping>
+  
+  <!-- <servlet>
+      <servlet-name>Securitycode</servlet-name>
+      <servlet-class>com.vvwork.client.net.basic.CaptchaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>Securitycode</servlet-name>
+      <url-pattern>/securitycode</url-pattern>
+  </servlet-mapping>
+   -->
+   
+  <servlet>
+      <servlet-name>FileUpLoadServlet</servlet-name>
+      <servlet-class>com.vvwork.client.net.basic.FileUpLoadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>FileUpLoadServlet</servlet-name>
+      <url-pattern>/file-upload-executor</url-pattern>
+  </servlet-mapping>
+  
+   
+ <!-- demo VvWork Tunnel Servlet -->
+    <!-- <servlet>
+        <description>Tunnel servlet.</description>
+        <servlet-name>DemoTunnel</servlet-name>
+        <servlet-class>com.vvwork.client.net.basic.net.example.DemoVvWorkTunnelServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DemoTunnel</servlet-name>
+        <url-pattern>/demo-tunnel</url-pattern>
+    </servlet-mapping> -->
+  
+  <!-- <servlet>
+	<servlet-name>vvwork-webdav</servlet-name>
+	<servlet-class>com.vvwork.client.net.basic.VvWorkCloudStorageServlet</servlet-class>
+	<init-param>
+	    <param-name>debug</param-name>
+	    <param-value>0</param-value>
+	</init-param>
+	<init-param>
+	    <param-name>listings</param-name>
+	    <param-value>true</param-value>
+	</init-param>
+	
+	<init-param>
+	    <param-name>readonly</param-name>
+	    <param-value>false</param-value>
+	</init-param>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>vvwork-webdav</servlet-name>
+	<url-pattern>/vvwork-webdav/*</url-pattern>
+	</servlet-mapping>
+	
+	<security-constraint>
+        <web-resource-collection>
+            <web-resource-name>vvwork-webdav</web-resource-name>
+            Detect WebDAV Methods in URL For Whole Application
+            <url-pattern>/vvwork-webdav/*</url-pattern>
+            <http-method>PROPFIND</http-method>
+            <http-method>PROPPATCH</http-method>
+            <http-method>COPY</http-method>
+            <http-method>MOVE</http-method>
+            <http-method>LOCK</http-method>
+            <http-method>UNLOCK</http-method>
+        </web-resource-collection>
+        Restrict access by role
+        <auth-constraint>
+            <role-name>*</role-name>
+        </auth-constraint>
+    </security-constraint>
+    
+    <login-config>
+        <auth-method>BASIC</auth-method>
+        <realm-name>webdav</realm-name>
+    </login-config>
+    <security-role>
+        <description>VvWork WebDAV User</description>
+        <role-name>vvwork-webdav</role-name>
+    </security-role>
+ -->
+ 
+  <mime-mapping>
+    <extension>mp3</extension>
+    <mime-type>audio/mpeg</mime-type>
+  </mime-mapping>
+  
+  <mime-mapping>
+    <extension>ogg</extension>
+    <mime-type>audio/ogg</mime-type>
+  </mime-mapping>
+  
+  　<mime-mapping>
+    <extension>apk</extension>
+        　<mime-type>application/vnd.android.package-archive</mime-type>
+  </mime-mapping>
+</web-app>
